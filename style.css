@@ -160,7 +160,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--dark-text);
-    background: linear-gradient(180deg, #ffffff 0%, #fbfcfd 60%, #f6f8f9 100%);
+    background: red;
     line-height: 1.65;
 }
 
