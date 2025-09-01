@@ -160,7 +160,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--dark-text);
-    background: green;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
     line-height: 1.65;
 }
 
