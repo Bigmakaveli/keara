@@ -160,7 +160,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--dark-text);
-    background: yellow; /* Yellow background */
+    background: #ffffff; /* White background */
     line-height: 1.65;
 }
 
