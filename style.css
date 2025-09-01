@@ -7,7 +7,7 @@
     --primary-color: #000000; /* black for titles and main accents */
     --accent-color: #000000; /* black accent */
     --accent-hover: #222222; /* dark gray on hover */
-    --light-bg: #ffc0cb; /* pink background */
+    --light-bg: #ffffff; /* white background */
     --panel-bg: #ffffff; /* surfaces */
     --dark-text: #000000; /* text */
     --muted-text: #444444; /* secondary text */
@@ -160,6 +160,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--dark-text);
+    background: linear-gradient(180deg, #ffffff 0%, #fbfcfd 60%, #f6f8f9 100%);
     line-height: 1.65;
 }
 
@@ -175,6 +176,9 @@ p { color: var(--muted-text); }
 .hero {
     position: relative;
     height: 85vh;
+    background-image: url("https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
 }
 
