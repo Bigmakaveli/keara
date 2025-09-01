@@ -19,6 +19,24 @@
     --shadow-md: 0 10px 30px rgba(14, 15, 18, 0.10);
 }
 
+.green-btn {
+    background-color: #28a745; /* Green color */
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, background-color 0.2s;
+    margin-left: 8px;
+}
+
+.green-btn:hover {
+    transform: translateY(-1px);
+    background-color: #218838; /* Darker green on hover */
+}
+
 html { scroll-behavior: smooth; }
 
 /* Skip link (accessibility) */
