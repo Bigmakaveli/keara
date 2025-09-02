@@ -300,6 +300,29 @@ document.addEventListener('DOMContentLoaded', () => {
     setActiveLangBtn(lang);
   };
 
+  // Popup functionality
+  const popup = document.getElementById('popup');
+  const closePopupBtn = popup ? popup.querySelector('.close-popup') : null;
+
+  const openPopup = () => {
+    if (popup) {
+      popup.style.display = 'flex';
+    }
+  };
+
+  const closePopup = () => {
+    if (popup) {
+      popup.style.display = 'none';
+    }
+  };
+
+  if (closePopupBtn) {
+    closePopupBtn.addEventListener('click', closePopup);
+  }
+
+  // Example: Open popup on page load
+  window.addEventListener('load', openPopup);
+
   // Initialize language switcher
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
