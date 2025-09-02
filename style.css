@@ -308,9 +308,10 @@ p { color: var(--muted-text); }
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 12px 20px;
+    padding: 14px 28px; /* Ensure consistent padding */
     border-radius: 999px;
     font-weight: 700;
+    font-size: 1.1rem; /* Ensure consistent font size */
     text-decoration: none;
     transition: transform .18s ease, background-color .2s ease, box-shadow .2s ease, color .2s ease;
     box-shadow: var(--shadow-sm);
