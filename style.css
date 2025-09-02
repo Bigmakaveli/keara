@@ -215,6 +215,7 @@ body {
     color: var(--dark-text);
     line-height: 1.65;
     visibility: visible; /* Ensure body content is visible */
+    opacity: 1; /* Ensure body content is fully opaque */
 }
 
 h1, h2, h3 {
