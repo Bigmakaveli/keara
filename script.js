@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const applyTranslations = (lang) => {
     document.documentElement.lang = (lang === 'ar') ? 'ar' : 'he';
-    document.documentElement.dir = 'rtl';
+    document.documentElement.dir = (lang === 'en') ? 'ltr' : 'rtl';
     document.title = getText(lang, 'page.title');
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
