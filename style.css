@@ -329,6 +329,7 @@ p { color: var(--muted-text); }
     padding: 14px 28px;
     font-size: 1.1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 150px; /* Ensure consistent width */
 }
 .btn.primary:hover,
 .btn.ghost:hover {
