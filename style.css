@@ -219,6 +219,16 @@ p { color: var(--muted-text); }
     background-size: cover;
     background-position: center;
     color: #ffffff;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInHero 1.5s ease-out forwards;
+}
+
+@keyframes fadeInHero {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Dark overlay to improve contrast on hero */
