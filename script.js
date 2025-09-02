@@ -473,4 +473,5 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     revealEls.forEach(el => el.classList.add('in-view'));
   }
-});
+    // Trigger a barrel roll on the body element when the page loads
+    document.body.classList.add('barrel-roll');

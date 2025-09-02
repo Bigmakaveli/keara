@@ -17,6 +17,18 @@
     --border-light: #eef0f2; /* very light border */
     --shadow-sm: 0 4px 10px rgba(14, 15, 18, 0.06);
     --shadow-md: 0 10px 30px rgba(14, 15, 18, 0.10);
+/* Barrel roll animation */
+@keyframes barrelRoll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.barrel-roll {
+    animation: barrelRoll 2s ease-in-out;
 }
 /* Fade-in animation */
 @keyframes fadeIn {
