@@ -68,12 +68,6 @@ html { scroll-behavior: smooth; }
     background: var(--accent-color);
     color: var(--light-text);
     border-color: transparent;
-    background: #ffffff;
-    border: 1px solid var(--border-color);
-    padding: 6px 10px;
-    border-radius: 999px;
-    font-weight: 700;
-    box-shadow: var(--shadow-sm);
 }
 
 /* Accessibility and social icon styles */
