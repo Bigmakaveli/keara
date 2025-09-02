@@ -98,7 +98,8 @@ html { scroll-behavior: smooth; }
     z-index: 2000;
 }
 
-.social-icons a {
+.social-icons a,
+#hatButton {
     display: flex;
     justify-content: center;
     align-items: center;
