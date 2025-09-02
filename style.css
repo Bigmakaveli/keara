@@ -58,6 +58,22 @@ html { scroll-behavior: smooth; }
     border-radius: 999px;
     font-weight: 700;
     box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: background-color .2s, color .2s, border-color .2s, transform .18s ease;
+}
+.lang-floating .lang-btn:hover {
+    transform: translateY(-1px);
+}
+.lang-floating .lang-btn.active {
+    background: var(--accent-color);
+    color: var(--light-text);
+    border-color: transparent;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: var(--shadow-sm);
 }
 
 /* Accessibility and social icon styles */
