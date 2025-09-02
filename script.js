@@ -1,37 +1,6 @@
 // Client-side script for search functionality, i18n, and form handling
 
 document.addEventListener('DOMContentLoaded', () => {
-  /**
-   * Show sale popup on page load
-   */
-  const salePopup = document.getElementById('salePopup');
-  const closePopupBtn = salePopup ? salePopup.querySelector('.close-popup') : null;
-
-  const showSalePopup = () => {
-    if (salePopup) {
-      salePopup.style.display = 'flex';
-      salePopup.setAttribute('aria-hidden', 'false');
-    }
-  };
-
-  const closeSalePopup = () => {
-    if (salePopup) {
-      salePopup.style.display = 'none';
-      salePopup.setAttribute('aria-hidden', 'true');
-    }
-  };
-
-  if (closePopupBtn) {
-    closePopupBtn.addEventListener('click', closeSalePopup);
-  }
-
-  const xoutPopupBtn = salePopup ? salePopup.querySelector('.xout-popup') : null;
-  if (xoutPopupBtn) {
-    xoutPopupBtn.addEventListener('click', closeSalePopup);
-  }
-
-  // Show popup after a short delay when the page loads
-  setTimeout(showSalePopup, 1000);
 
   /**
    * i18n dictionary for Hebrew (he) and Arabic (ar)
