@@ -5,16 +5,16 @@
 :root {
     /* Monochrome palette */
     --primary-color: #ffffff; /* white for titles and main accents */
-    --accent-color: #333333; /* dark gray accent */
-    --accent-hover: #555555; /* lighter gray on hover */
+    --accent-color: #666666; /* medium gray accent */
+    --accent-hover: #888888; /* lighter gray on hover */
     --light-bg: #f0f0f0; /* light gray background */
-    --panel-bg: #1a1a1a; /* dark gray surfaces */
-    --dark-text: #ffffff; /* white text */
-    --muted-text: #cccccc; /* light gray text */
+    --panel-bg: #e0e0e0; /* light gray surfaces */
+    --dark-text: #333333; /* dark gray text */
+    --muted-text: #999999; /* medium gray text */
     --light-text: #ffffff; /* white text */
     --highlight: rgba(255, 255, 255, 0.1); /* subtle white highlight */
-    --border-color: #444444; /* dark gray border */
-    --border-light: #666666; /* lighter gray border */
+    --border-color: #bbbbbb; /* light gray border */
+    --border-light: #dddddd; /* lighter gray border */
     --shadow-sm: 0 4px 10px rgba(14, 15, 18, 0.06);
     --shadow-md: 0 10px 30px rgba(14, 15, 18, 0.10);
 }
@@ -226,7 +226,7 @@ body.high-contrast {
 }
 
 body.high-contrast .main-nav {
-    background-color: #333333 !important;
+    background-color: #666666 !important;
 }
 
 body.high-contrast .main-nav a {
@@ -237,15 +237,15 @@ body.high-contrast .category,
 body.high-contrast .light-bg,
 body.high-contrast .contact-container {
     background-color: #ffffff;
-    border-color: #000000;
+    border-color: #cccccc;
 }
 
 body.high-contrast .category li {
-    border-bottom-color: #333333;
+    border-bottom-color: #666666;
 }
 
 body.high-contrast footer {
-    background-color: #000000;
+    background-color: #666666;
     color: #ffffff;
 }
 
