@@ -300,34 +300,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setActiveLangBtn(lang);
   };
 
-  // Popup functionality
-  const popup = document.getElementById('popup');
-  const closePopupBtn = popup ? popup.querySelector('.close-popup') : null;
-
-  const openPopup = () => {
-    if (popup) {
-      popup.classList.add('show');
-    }
-  };
-
-  const closePopup = () => {
-    if (popup) {
-      popup.classList.remove('show');
-    }
-  };
-
-  const xoutPopupBtn = popup ? popup.querySelector('.xout-popup') : null;
-
-  if (closePopupBtn) {
-    closePopupBtn.addEventListener('click', closePopup);
-  }
-
-  if (xoutPopupBtn) {
-    xoutPopupBtn.addEventListener('click', closePopup);
-  }
-
-  // Example: Open popup on page load
-  window.addEventListener('load', openPopup);
 
   // Initialize language switcher
   document.querySelectorAll('.lang-btn').forEach(btn => {
