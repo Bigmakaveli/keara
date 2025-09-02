@@ -316,7 +316,8 @@ p { color: var(--muted-text); }
     box-shadow: var(--shadow-sm);
 }
 .btn.primary,
-.cta-group .btn.primary {
+.cta-group .btn.primary,
+.cta-group .btn.ghost {
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: var(--light-text);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
