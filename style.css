@@ -17,6 +17,12 @@
     --border-light: #eef0f2; /* very light border */
     --shadow-sm: 0 4px 10px rgba(14, 15, 18, 0.06);
     --shadow-md: 0 10px 30px rgba(14, 15, 18, 0.10);
+.menu-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
 }
 
 .green-btn {
