@@ -321,7 +321,7 @@ p { color: var(--muted-text); }
 .btn.primary,
 .cta-group .btn.primary,
 .btn.ghost {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background: linear-gradient(135deg, #1a73e8, #1558b0); /* Use blue gradient */
     color: var(--light-text);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: none;
@@ -335,7 +335,7 @@ p { color: var(--muted-text); }
 }
 .btn.primary:hover,
 .btn.ghost:hover {
-    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    background: linear-gradient(135deg, #1558b0, #1a73e8); /* Use blue gradient */
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     filter: brightness(1.1); /* Brighten on hover */
