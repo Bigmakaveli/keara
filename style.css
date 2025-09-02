@@ -113,6 +113,14 @@ html { scroll-behavior: smooth; }
     transition: transform 0.2s, background-color 0.2s;
 }
 
+#whatsappButton {
+    background-color: #25D366; /* WhatsApp green */
+}
+
+#whatsappButton:hover {
+    background-color: #1EBE57; /* Darker green on hover */
+}
+
 .social-icons a:hover {
     transform: translateY(-2px);
     background-color: var(--accent-hover);
