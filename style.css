@@ -4,17 +4,17 @@
 /* CSS variables for easy theming */
 :root {
     /* Monochrome palette */
-    --primary-color: #1a73e8; /* blue for titles and main accents */
-    --accent-color: #1a73e8; /* blue accent */
-    --accent-hover: #1558b0; /* darker blue on hover */
-    --light-bg: #f1f3f4; /* light gray background */
-    --panel-bg: #ffffff; /* white surfaces */
-    --dark-text: #202124; /* dark gray text */
-    --muted-text: #5f6368; /* muted gray text */
+    --primary-color: #ffffff; /* white for titles and main accents */
+    --accent-color: #333333; /* dark gray accent */
+    --accent-hover: #555555; /* lighter gray on hover */
+    --light-bg: #000000; /* black background */
+    --panel-bg: #1a1a1a; /* dark gray surfaces */
+    --dark-text: #ffffff; /* white text */
+    --muted-text: #cccccc; /* light gray text */
     --light-text: #ffffff; /* white text */
-    --highlight: rgba(26, 115, 232, 0.06); /* subtle blue highlight */
-    --border-color: #dadce0; /* light gray border */
-    --border-light: #e8eaed; /* very light gray border */
+    --highlight: rgba(255, 255, 255, 0.1); /* subtle white highlight */
+    --border-color: #444444; /* dark gray border */
+    --border-light: #666666; /* lighter gray border */
     --shadow-sm: 0 4px 10px rgba(14, 15, 18, 0.06);
     --shadow-md: 0 10px 30px rgba(14, 15, 18, 0.10);
 }
