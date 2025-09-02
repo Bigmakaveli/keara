@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'meta.description': 'מסעדה ביתית עם תפריט טרי, סלטים בהרכבה אישית, מנות טאבון, סמבוסק ומשקאות. גלריה, טופס קשר ויצירת קשר מהירה בוואטסאפ. מותאם עברית וערבית.',
       'skip.content': 'דלג לתוכן',
       'accessibility.toggle': 'ניגודיות',
-      'hero.brand': 'קערה',
+      'hero.brand': 'הקערה',
       'hero.tagline': "Salad is not a meal, it's a lifestyle",
       'cta.menu': 'לתפריט',
       'cta.contact': 'צור קשר',
