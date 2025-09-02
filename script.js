@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     closePopupBtn.addEventListener('click', closeSalePopup);
   }
 
+  const xoutPopupBtn = salePopup ? salePopup.querySelector('.xout-popup') : null;
+  if (xoutPopupBtn) {
+    xoutPopupBtn.addEventListener('click', closeSalePopup);
+  }
+
   // Show popup after a short delay when the page loads
   setTimeout(showSalePopup, 1000);
 
