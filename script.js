@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const normalizeText = (s) => (s || '').toLowerCase().normalize('NFKD').replace(/\p{M}+/gu, '');
 
   // Force default language to Hebrew on load
-  let currentLang = localStorage.getItem('lang') || 'he';
+  let currentLang = 'he';
   let menuItems = getMenuItemsForLang(currentLang);
   let messages = {
     validation: getText(currentLang, 'contact.validation_error'),
