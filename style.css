@@ -214,6 +214,7 @@ body {
     padding: 0;
     color: var(--dark-text);
     line-height: 1.65;
+    visibility: visible; /* Ensure body content is visible */
 }
 
 h1, h2, h3 {
