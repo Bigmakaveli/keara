@@ -7,7 +7,7 @@
     --primary-color: #ffffff; /* white for titles and main accents */
     --accent-color: #333333; /* dark gray accent */
     --accent-hover: #555555; /* lighter gray on hover */
-    --light-bg: #000000; /* black background */
+    --light-bg: #f0f0f0; /* light gray background */
     --panel-bg: #1a1a1a; /* dark gray surfaces */
     --dark-text: #ffffff; /* white text */
     --muted-text: #cccccc; /* light gray text */
@@ -221,12 +221,12 @@ html { scroll-behavior: smooth; }
 /* High contrast mode adjustments for accessibility */
 body.high-contrast {
     background: #ffffff;
-    color: #000000;
+    color: #333333;
     font-size: 1.1em;
 }
 
 body.high-contrast .main-nav {
-    background-color: #000000 !important;
+    background-color: #333333 !important;
 }
 
 body.high-contrast .main-nav a {
@@ -534,7 +534,7 @@ main {
 footer {
     text-align: center;
     padding: 18px 0;
-    background: #000000;
+    background: #333333;
     color: var(--light-text);
     margin-top: 40px;
 }
