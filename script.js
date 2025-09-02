@@ -316,8 +316,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  const xoutPopupBtn = popup ? popup.querySelector('.xout-popup') : null;
+
   if (closePopupBtn) {
     closePopupBtn.addEventListener('click', closePopup);
+  }
+
+  if (xoutPopupBtn) {
+    xoutPopupBtn.addEventListener('click', closePopup);
   }
 
   // Example: Open popup on page load
