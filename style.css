@@ -330,12 +330,15 @@ p { color: var(--muted-text); }
     font-size: 1.1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-width: 150px; /* Ensure consistent width */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 1px; /* Add letter spacing */
 }
 .btn.primary:hover,
 .btn.ghost:hover {
     background: linear-gradient(135deg, #feb47b, #ff7e5f);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1); /* Brighten on hover */
 }
 .btn.full { width: 100%; }
 
