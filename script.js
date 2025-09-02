@@ -306,13 +306,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const openPopup = () => {
     if (popup) {
-      popup.style.display = 'flex';
+      popup.classList.add('show');
     }
   };
 
   const closePopup = () => {
     if (popup) {
-      popup.style.display = 'none';
+      popup.classList.remove('show');
     }
   };
 
