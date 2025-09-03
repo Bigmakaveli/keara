@@ -78,28 +78,6 @@ html { scroll-behavior: smooth; }
     transition: transform 0.18s ease, background-color 0.18s ease;
 }
 
-/* New green button at top */
-.top-green-btn {
-    position: fixed;
-    top: 12px;
-    left: 80px; /* Adjusted position to fit the new button */
-    z-index: 2002;
-    background-color: #4CAF50; /* Green color for the test button */
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.18s ease, background-color 0.18s ease;
-}
-
-.top-green-btn:hover {
-    background-color: #1EBE57;
-    transform: translateY(-1px);
-}
 
 /* Green variant for CTA using WhatsApp-like green */
 .btn.green {
