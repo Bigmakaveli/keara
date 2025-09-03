@@ -60,6 +60,35 @@ html { scroll-behavior: smooth; }
     box-shadow: var(--shadow-sm);
 }
 
+/* Top green CTA button (fixed) */
+.top-cta {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 2002;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+/* Green variant for CTA using WhatsApp-like green */
+.btn.green {
+    background-color: #25D366;
+    color: var(--light-text);
+    border: none;
+}
+.btn.green:hover {
+    background-color: #1EBE57;
+    transform: translateY(-1px);
+}
+
 /* Accessibility and social icon styles */
 .accessibility-buttons {
     position: fixed;
