@@ -82,9 +82,9 @@ html { scroll-behavior: smooth; }
 .top-green-btn {
     position: fixed;
     top: 12px;
-    left: 200px; /* Position it next to the WhatsApp button */
+    left: 80px; /* Adjusted position to fit the new button */
     z-index: 2002;
-    background-color: #25D366;
+    background-color: #4CAF50; /* Green color for the test button */
     color: white;
     border: none;
     padding: 10px 16px;
