@@ -353,6 +353,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (whatsappButton) {
     whatsappButton.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}`);
   }
+  // Also keep the top CTA WhatsApp button in sync if present
+  const topWhatsappCta = document.getElementById('topWhatsappCta');
+  if (topWhatsappCta) {
+    topWhatsappCta.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}`);
+  }
 
   if (contactForm && contactStatus) {
     contactForm.addEventListener('submit', (e) => {
