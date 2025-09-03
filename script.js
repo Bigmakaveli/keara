@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'hero.tagline': "Salad is not a meal, it's a lifestyle",
       'cta.menu': 'לתפריט',
       'cta.contact': 'צור קשר',
+      'cta.whatsapp': 'הזמנה בוואטסאפ',
       'nav.menu': 'תפריט',
       'nav.about': 'אודות',
       'nav.services': 'שירותים',
@@ -54,6 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
       'gallery.desc': 'קצת מהאווירה והטעמים שלנו כדי שתוכלו להרגיש בבית עוד לפני שאתם מגיעים.',
       'gallery.prev': 'תמונה קודמת',
       'gallery.next': 'תמונה הבאה',
+      'usp.title': 'למה לבחור בנו',
+      'usp.fresh.title': 'טרי מהשוק',
+      'usp.fresh.desc': 'חומרי גלם יומיומיים ועונתיים שנחתכים ומוכנים במקום.',
+      'usp.fast.title': 'מהיר וידידותי',
+      'usp.fast.desc': 'הזמנה קלה ושירות מחויך – גם בישיבה וגם בטייק־אווי.',
+      'usp.kosher.title': 'בריא ומאוזן',
+      'usp.kosher.desc': 'אפשרויות צמחוניות וטבעוניות עם איזון נכון של טעמים.',
+      'cta.banner.title': 'בא לכם להזמין עכשיו?',
+      'cta.banner.desc': 'שלחו לנו הודעה בוואטסאפ ונחזור אליכם עם הצעה מותאמת אישית.',
+      'cta.banner.button': 'פתח וואטסאפ',
       'contact.title': 'צור קשר',
       'contact.desc': 'נשמח לשמוע מכם! מלאו את הטופס ונחזור אליכם בהקדם.',
       'contact.name_label': 'שם מלא',
@@ -81,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'hero.tagline': "Salad is not a meal, it's a lifestyle",
       'cta.menu': 'إلى القائمة',
       'cta.contact': 'تواصل',
+      'cta.whatsapp': 'اطلب عبر واتساب',
       'nav.menu': 'القائمة',
       'nav.about': 'من نحن',
       'nav.services': 'خدمات',
@@ -121,6 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
       'gallery.desc': 'بعض الأجواء والنكهات لدينا لتشعروا بالبيت قبل أن تصلوا.',
       'gallery.prev': 'الصورة السابقة',
       'gallery.next': 'الصورة التالية',
+      'usp.title': 'لماذا تختاروننا',
+      'usp.fresh.title': 'طازج من السوق',
+      'usp.fresh.desc': 'مكونات يومية وموسمية تُحضّر وتُقطع في المكان.',
+      'usp.fast.title': 'سريع وودود',
+      'usp.fast.desc': 'طلب سهل وخدمة بابتسامة – للجلوس أو للتيك أواي.',
+      'usp.kosher.title': 'صحي ومتوازن',
+      'usp.kosher.desc': 'خيارات نباتية ونباتية بالكامل مع توازن صحيح للنَكهات.',
+      'cta.banner.title': 'جاهزون للطلب الآن؟',
+      'cta.banner.desc': 'أرسلوا لنا رسالة عبر واتساب وسنعود بعرض مخصص لكم.',
+      'cta.banner.button': 'افتح واتساب',
       'contact.title': 'تواصل معنا',
       'contact.desc': 'يسعدنا سماعكم! املؤوا النموذج وسنعاود الاتصال بكم في أقرب وقت.',
       'contact.name_label': 'الاسم الكامل',
@@ -148,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'hero.tagline': "Salad is not a meal, it's a lifestyle",
       'cta.menu': 'To Menu',
       'cta.contact': 'Contact Us',
+      'cta.whatsapp': 'Order on WhatsApp',
       'nav.menu': 'Menu',
       'nav.about': 'About',
       'nav.services': 'Services',
@@ -188,6 +211,16 @@ document.addEventListener('DOMContentLoaded', () => {
       'gallery.desc': 'Some of our atmosphere and flavors so you can feel at home before you even arrive.',
       'gallery.prev': 'Previous Image',
       'gallery.next': 'Next Image',
+      'usp.title': 'Why Choose Us',
+      'usp.fresh.title': 'Fresh from the Market',
+      'usp.fresh.desc': 'Daily, seasonal ingredients prepped and cut on site.',
+      'usp.fast.title': 'Fast & Friendly',
+      'usp.fast.desc': 'Easy ordering and a smiling service – dine in or takeout.',
+      'usp.kosher.title': 'Healthy & Balanced',
+      'usp.kosher.desc': 'Vegetarian and vegan options with the right balance of flavors.',
+      'cta.banner.title': 'Ready to order now?',
+      'cta.banner.desc': 'Send us a WhatsApp message and we’ll get back with a tailored offer.',
+      'cta.banner.button': 'Open WhatsApp',
       'contact.title': 'Contact Us',
       'contact.desc': 'We would love to hear from you! Fill out the form and we will get back to you as soon as possible.',
       'contact.name_label': 'Full Name',
@@ -358,6 +391,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (topWhatsappCta) {
     topWhatsappCta.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}`);
   }
+  // Sync any element marked with data-wa-link
+  document.querySelectorAll('[data-wa-link]').forEach(el => {
+    el.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}`);
+  });
 
   if (contactForm && contactStatus) {
     contactForm.addEventListener('submit', (e) => {

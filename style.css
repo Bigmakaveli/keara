@@ -232,7 +232,7 @@ p { color: var(--muted-text); }
 .hero .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 40%, rgba(232,78,27,0.22) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -273,6 +273,52 @@ p { color: var(--muted-text); }
 .btn.ghost { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.35); }
 .btn.ghost:hover { background: rgba(255,255,255,0.18); transform: translateY(-1px); }
 .btn.full { width: 100%; }
+
+/* Gradient brand text */
+.gradient-text {
+    background: linear-gradient(90deg, #FF7A00, #FF3E6C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+/* USP (features) section */
+.usp-section { padding-top: 40px; }
+.usp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 14px;
+}
+.usp-card {
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.usp-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.usp-emoji { font-size: 32px; line-height: 1; }
+
+/* CTA banner */
+.cta-banner { padding: 48px 0; }
+.cta-banner .cta-banner-inner {
+    background: linear-gradient(135deg, #FF7A00 0%, #E84E1B 45%, #FF3E6C 100%);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+.cta-banner .btn { box-shadow: var(--shadow-sm); }
+
+/* High contrast adjustments for new components */
+body.high-contrast .cta-banner .cta-banner-inner { background: #000000; color: #ffffff; }
+body.high-contrast .gradient-text { color: #000000 !important; background: none !important; -webkit-text-fill-color: #000000; }
+body.high-contrast .usp-card { background-color: #ffffff; border-color: #000000; }
 
 /* Modernized navigation bar */
 .main-nav {
