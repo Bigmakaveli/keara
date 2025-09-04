@@ -678,6 +678,12 @@ footer {
 .modal .nav-prev { left: 18px; }
 .modal .nav-next { right: 18px; }
 
+/* Swap modal nav button positions for RTL languages */
+html[lang="he"] .modal .nav-prev,
+html[lang="ar"] .modal .nav-prev { left: auto; right: 18px; }
+html[lang="he"] .modal .nav-next,
+html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
+
 /* Services page image */
 .laundry-image-wrapper { margin-top: 10px; text-align: center; }
 

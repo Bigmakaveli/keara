@@ -330,6 +330,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Persist and highlight active language
     localStorage.setItem('lang', lang);
     setActiveLangBtn(lang);
+
+    // Update gallery modal arrow icons to match RTL/LTR expectations
+    const pBtn = document.querySelector('.modal .nav-prev');
+    const nBtn = document.querySelector('.modal .nav-next');
+    if (pBtn && nBtn) {
+      const isRtl = (lang === 'he' || lang === 'ar');
+      // In RTL: previous shows a right chevron, next shows a left chevron
+      pBtn.textContent = isRtl ? '\u203A' : '\u2039';
+      nBtn.textContent = isRtl ? '\u2039' : '\u203A';
+    }
   };
 
   // Initialize language switcher
