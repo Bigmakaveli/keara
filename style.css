@@ -729,6 +729,16 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     .main-nav .nav-content { padding: 10px 16px; }
     .categories-wrapper { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
     .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+
+    /* Make gradient text solid black on mobile */
+    .gradient-text {
+        background: none;
+        color: var(--primary-color);
+        -webkit-text-fill-color: var(--primary-color);
+        -webkit-background-clip: initial;
+        background-clip: initial;
+    }
+
     .about-content,
     .services-content { flex-direction: column; align-items: flex-start; }
     .about-content .founder-figure,
