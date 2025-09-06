@@ -257,7 +257,7 @@ p { color: var(--muted-text); }
 
 /* Tagline under the hero CTA buttons */
 .hero-tagline {
-    margin-top: 10px;
+    margin-top: 18px;
     font-size: 1.25rem;
     color: var(--light-text);
     text-align: center;
