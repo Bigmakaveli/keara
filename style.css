@@ -239,7 +239,7 @@ p { color: var(--muted-text); }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: 16px;
     text-align: center;
     padding: 20px;
 }
@@ -267,7 +267,7 @@ p { color: var(--muted-text); }
 
 /* CTA buttons in hero */
 .cta-group { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-.hero .overlay .cta-group { transform: none; }
+.hero .overlay .cta-group { transform: none; margin-top: 60px; }
 
 .btn {
     display: inline-flex;
@@ -757,4 +757,6 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     .services-content .laundry-image-wrapper { margin: 0 auto; }
     .services-content .laundry-image-wrapper { order: -1; width: 100%; }
     .modal-content { max-width: 95vw; max-height: 95vh; }
+    .hero .overlay { gap: 12px; }
+    .hero .overlay .cta-group { margin-top: 36px; }
 }
