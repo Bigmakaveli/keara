@@ -266,6 +266,7 @@ p { color: var(--muted-text); }
 
 /* CTA buttons in hero */
 .cta-group { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.hero .overlay .cta-group { transform: translateY(16px); }
 
 .btn {
     display: inline-flex;
