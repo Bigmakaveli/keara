@@ -224,7 +224,8 @@ p { color: var(--muted-text); }
     position: relative;
     height: 85vh;
     background-image: url("https://i.ibb.co/B2KmRPzx/a206104fbd8c.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     color: #ffffff;
 }
