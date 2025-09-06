@@ -757,6 +757,6 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     .services-content .laundry-image-wrapper { margin: 0 auto; }
     .services-content .laundry-image-wrapper { order: -1; width: 100%; }
     .modal-content { max-width: 95vw; max-height: 95vh; }
-    .hero .overlay { gap: 12px; padding-top: 8vh; justify-content: flex-start; }
+    .hero .overlay { gap: 12px; padding-top: 16vh; justify-content: flex-start; }
     .hero .overlay .cta-group { margin-top: 36px; }
 }
