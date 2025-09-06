@@ -239,6 +239,7 @@ p { color: var(--muted-text); }
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 48px;
     text-align: center;
     padding: 20px;
 }
@@ -257,7 +258,7 @@ p { color: var(--muted-text); }
 
 /* Tagline under the hero CTA buttons */
 .hero-tagline {
-    margin-top: 80px;
+    margin-top: 0;
     font-size: 1.25rem;
     color: var(--light-text);
     text-align: center;
@@ -266,7 +267,7 @@ p { color: var(--muted-text); }
 
 /* CTA buttons in hero */
 .cta-group { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-.hero .overlay .cta-group { transform: translateY(16px); }
+.hero .overlay .cta-group { transform: none; }
 
 .btn {
     display: inline-flex;
