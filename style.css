@@ -140,6 +140,7 @@ html { scroll-behavior: smooth; }
     color: var(--light-text);
     text-decoration: none;
     box-shadow: var(--shadow-sm);
+    overflow: hidden;
     transition: transform 0.2s, background-color 0.2s;
 }
 
