@@ -151,6 +151,14 @@ html { scroll-behavior: smooth; }
     background-color: #C13584; /* Darker shade for hover effect */
 }
 
+#wazeButton {
+    background-color: #33CCFF; /* Waze brand color */
+}
+
+#wazeButton:hover {
+    background-color: #1BB4E8; /* Darker Waze blue on hover */
+}
+
 #whatsappButton,
 #callButton {
     background-color: #25D366; /* WhatsApp green */
