@@ -151,11 +151,13 @@ html { scroll-behavior: smooth; }
     background-color: #C13584; /* Darker shade for hover effect */
 }
 
-#whatsappButton {
+#whatsappButton,
+#callButton {
     background-color: #25D366; /* WhatsApp green */
 }
 
-#whatsappButton:hover {
+#whatsappButton:hover,
+#callButton:hover {
     background-color: #1EBE57; /* Darker green on hover */
 }
 

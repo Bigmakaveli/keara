@@ -391,10 +391,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactStatus = document.getElementById('contactMessageStatus');
   const WHATSAPP_NUMBER = '972537700285'; // 053-770-0285 in international format without leading 0
 
-  // Keep the floating WhatsApp button in sync with the same number
-  const whatsappButton = document.getElementById('whatsappButton');
-  if (whatsappButton) {
-    whatsappButton.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}`);
+  // Set the floating Call button to dial the restaurant
+  const callButton = document.getElementById('callButton');
+  if (callButton) {
+    callButton.setAttribute('href', `tel:048641967`);
   }
   // Also keep the top CTA WhatsApp button in sync if present
   const topWhatsappCta = document.getElementById('topWhatsappCta');
