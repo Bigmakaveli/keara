@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const contactForm = document.getElementById('contactForm');
   const contactStatus = document.getElementById('contactMessageStatus');
-  const WHATSAPP_NUMBER = '972525359582'; // 052-5359582 in international format without leading 0
+  const WHATSAPP_NUMBER = '972537700285'; // 053-770-0285 in international format without leading 0
 
   // Keep the floating WhatsApp button in sync with the same number
   const whatsappButton = document.getElementById('whatsappButton');
