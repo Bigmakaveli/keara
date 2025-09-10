@@ -747,7 +747,7 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
 }
 
 @media (max-width: 768px) {
-    .hero { height: 60vh; }
+    .hero { height: 60vh; background-size: cover; background-position: center; }
     .hero-tagline { font-size: 1.05rem; }
     .main-nav .nav-content { padding: 10px 16px; }
     .categories-wrapper { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
