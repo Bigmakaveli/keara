@@ -738,6 +738,16 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     box-shadow: var(--shadow-sm);
 }
 
+/* Instagram/Instagram Reel embed container */
+.embed-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.embed-container blockquote.instagram-media {
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .menu-toggle { display: inline-flex; }
