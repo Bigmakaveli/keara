@@ -656,6 +656,12 @@ footer {
 /* Hover effect for gallery images */
 .gallery-grid img:hover { transform: translateY(-4px) scale(1.02); box-shadow: var(--shadow-md); filter: saturate(1.05); }
 
+/* Hide last image in the gallery grid */
+.gallery-grid img:last-of-type,
+.gallery img:last-of-type {
+    display: none;
+}
+
 /* Styles for enlarged image modal */
 .modal {
     display: none; /* Hidden by default */
