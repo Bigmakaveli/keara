@@ -470,6 +470,12 @@ main {
     padding: 36px 0;
 }
 
+/* Reduce top spacing for the very first section */
+main > .section:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 /* "The Bowl" horizontal row */
 .bowl-row .bowl-row-inner {
     display: flex;
