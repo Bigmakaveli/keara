@@ -155,6 +155,10 @@ html { scroll-behavior: smooth; }
 #wazeButton {
     background-color: #33CCFF; /* Waze brand color */
     overflow: hidden; /* Ensure scaled icon is clipped to circle */
+    background-image: url('https://i.ibb.co/6JZP4ncf/b6e31a49abe1.png');
+    background-size: 135%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #wazeButton:hover {
@@ -956,31 +960,23 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     border-color: transparent;
     overflow: hidden;
     padding: 0;
+    background-image: url('https://i.ibb.co/6JZP4ncf/b6e31a49abe1.png');
+    background-size: 135%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .fab-waze:hover,
 .fab-waze:focus-visible { background-color: #1BB4E8; }
-/* Ensure Waze icon fills entire button area */
+/* Use background image for Waze icon and hide inner media */
 .fab-waze img,
 .fab-waze svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    transform: scale(1.12);
-    transform-origin: center;
+    display: none;
 }
 
 /* Also cover older Waze button variant */
 #wazeButton img,
 #wazeButton svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    transform: scale(1.12);
-    transform-origin: center;
+    display: none;
 }
 
 .fab-haat {
