@@ -959,11 +959,15 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
 
 .fab-haat {
     background-color: #ffffff;
+    overflow: hidden;
+    padding: 0;
 }
 .fab-haat img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
 }
 
 /* Responsive adjustments */
