@@ -388,6 +388,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // First-time apply
   applyTranslations(currentLang);
 
+  // Adjust margin-top for the specific Hebrew heading without affecting others
+  (function adjustHebrewNextTitleMargin() {
+    const targetText = 'מה הלאה? החדשנות ממשיכה!';
+    if (!document.body) return;
+    const all = document.body.querySelectorAll('*');
+    for (const el of all) {
+      const txt = (el.textContent || '').trim();
+      if (txt === targetText) {
+        el.style.marginTop = '12px';
+        break;
+      }
+    }
+  })();
+
   /**
    * Search functionality – now language aware and diacritics-insensitive
    */
