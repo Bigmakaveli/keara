@@ -470,6 +470,39 @@ main {
     padding: 56px 0;
 }
 
+/* "The Bowl" horizontal row */
+.bowl-row .bowl-row-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 16px 20px;
+    box-shadow: var(--shadow-sm);
+}
+
+.bowl-row .bowl-row-inner img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.bowl-row .bowl-title {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 480px) {
+    .bowl-row .bowl-row-inner img { width: 110px; height: 110px; }
+    .bowl-row .bowl-title { font-size: 1.6rem; }
+}
+
 /* Alternate background for contrast */
 .light-bg {
     background-color: var(--light-bg);
