@@ -649,6 +649,18 @@ footer {
 .services-list { list-style: none; padding: 0; margin: 0; }
 .services-list li { padding: 6px 0; }
 
+/* Highlighted note under services list */
+.service-note {
+    display: inline-block;
+    margin: 8px 0 14px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    color: var(--primary-color);
+    background: var(--highlight);
+    box-shadow: var(--shadow-sm);
+}
+
 .about-text,
 .services-text { flex: 1 1 300px; }
 
