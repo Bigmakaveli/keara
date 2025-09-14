@@ -477,11 +477,11 @@ main {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    background: var(--panel-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 16px;
-    padding: 16px 20px;
-    box-shadow: var(--shadow-sm);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 16px 20px; /* keep spacing without card */
+    box-shadow: none;
 }
 
 .bowl-row .bowl-row-inner img {
@@ -498,10 +498,21 @@ main {
     color: var(--primary-color);
     letter-spacing: 0.3px;
 }
+.bowl-row .bowl-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.bowl-row .bowl-subtitle {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--muted-text);
+}
 
 @media (max-width: 480px) {
     .bowl-row .bowl-row-inner img { width: 110px; height: 110px; }
     .bowl-row .bowl-title { font-size: 1.8rem; }
+    .bowl-row .bowl-subtitle { font-size: 1rem; }
 }
 
 /* Alternate background for contrast */
