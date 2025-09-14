@@ -498,6 +498,21 @@ main > .section:first-of-type {
     box-shadow: var(--shadow-sm);
 }
 
+/* Blur-up lazy image effect */
+.lazy-img {
+    filter: blur(12px);
+    opacity: 0.85;
+    transform: scale(1.02);
+    transition: filter .5s ease, opacity .4s ease, transform .5s ease;
+    background-color: #eaeaea;
+    will-change: filter, opacity, transform;
+}
+.lazy-img.loaded {
+    filter: blur(0);
+    opacity: 1;
+    transform: none;
+}
+
 .bowl-row .bowl-title {
     margin: 0;
     font-size: 3rem;

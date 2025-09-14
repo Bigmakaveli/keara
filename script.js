@@ -625,4 +625,33 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     revealEls.forEach(el => el.classList.add('in-view'));
   }
+
+  // Lazy loading for "The Bowl" image with blurred placeholder and fade-in
+  (function initBowlLazyImage() {
+    const lazyImages = document.querySelectorAll('img.lazy-img[data-src]');
+    const loadImg = (img) => {
+      const src = img.getAttribute('data-src');
+      if (!src) return;
+      img.src = src;
+      img.removeAttribute('data-src');
+      img.addEventListener('load', () => {
+        img.classList.add('loaded');
+      }, { once: true });
+    };
+
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            loadImg(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '200px 0px', threshold: 0.1 });
+      lazyImages.forEach(img => io.observe(img));
+    } else {
+      // Fallback for older browsers: load immediately
+      lazyImages.forEach(loadImg);
+    }
+  })();
 });
