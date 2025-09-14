@@ -890,6 +890,82 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
 }
 .ig-overlay:hover::before { background: rgba(0,0,0,0.6); }
 
+/* Floating Action Buttons (bottom-right stack) */
+.fab-stack {
+    position: fixed;
+    right: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom, 0));
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 900; /* High, but below modal (z-index:1000) */
+}
+
+.fab-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #ffffff;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.fab-btn svg,
+.fab-btn img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.fab-btn:hover,
+.fab-btn:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(14, 15, 18, 0.18);
+}
+
+.fab-btn:focus-visible { outline: none; }
+
+/* Brand variants */
+.fab-instagram {
+    background-color: #E1306C;
+    color: #ffffff;
+    border-color: transparent;
+}
+.fab-instagram:hover,
+.fab-instagram:focus-visible { background-color: #C13584; }
+
+.fab-phone {
+    background-color: #25D366;
+    color: #ffffff;
+    border-color: transparent;
+}
+.fab-phone:hover,
+.fab-phone:focus-visible { background-color: #1EBE57; }
+
+.fab-waze {
+    background-color: #33CCFF;
+    color: #ffffff;
+    border-color: transparent;
+}
+.fab-waze:hover,
+.fab-waze:focus-visible { background-color: #1BB4E8; }
+
+.fab-haat {
+    background-color: #ffffff;
+}
+.fab-haat img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .menu-toggle { display: inline-flex; }
