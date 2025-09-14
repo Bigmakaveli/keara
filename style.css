@@ -308,7 +308,7 @@ p { color: var(--muted-text); }
 }
 
 /* USP (features) section */
-.usp-section { padding-top: 40px; }
+.usp-section { padding-top: 24px; }
 .usp-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -328,7 +328,7 @@ p { color: var(--muted-text); }
 .usp-emoji { font-size: 32px; line-height: 1; }
 
 /* CTA banner */
-.cta-banner { padding: 48px 0; }
+.cta-banner { padding: 28px 0; }
 .cta-banner .cta-banner-inner {
     background: linear-gradient(135deg, #FF7A00 0%, #E84E1B 45%, #FF3E6C 100%);
     color: #ffffff;
@@ -467,7 +467,7 @@ main {
 
 /* Section wrapper */
 .section {
-    padding: 56px 0;
+    padding: 36px 0;
 }
 
 /* "The Bowl" horizontal row */
@@ -619,7 +619,7 @@ footer {
     padding: 18px 0;
     background: #000000;
     color: var(--light-text);
-    margin-top: 40px;
+    margin-top: 24px;
 }
 
 /* Founder figure */
@@ -883,6 +883,7 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     .main-nav .nav-content { padding: 10px 16px; }
     .categories-wrapper { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
     .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+    .section { padding: 24px 0; }
 
     /* Make gradient text solid black on mobile */
     .gradient-text {
