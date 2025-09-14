@@ -953,9 +953,28 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     background-color: #33CCFF;
     color: #ffffff;
     border-color: transparent;
+    overflow: hidden;
+    padding: 0;
 }
 .fab-waze:hover,
 .fab-waze:focus-visible { background-color: #1BB4E8; }
+/* Ensure Waze icon fills entire button area */
+.fab-waze img,
+.fab-waze svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Also cover older Waze button variant */
+#wazeButton img,
+#wazeButton svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
 .fab-haat {
     background-color: #ffffff;
