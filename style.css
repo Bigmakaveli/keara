@@ -154,6 +154,7 @@ html { scroll-behavior: smooth; }
 
 #wazeButton {
     background-color: #33CCFF; /* Waze brand color */
+    overflow: hidden; /* Ensure scaled icon is clipped to circle */
 }
 
 #wazeButton:hover {
@@ -964,7 +965,10 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
+    transform: scale(1.12);
+    transform-origin: center;
 }
 
 /* Also cover older Waze button variant */
@@ -973,7 +977,10 @@ html[lang="ar"] .modal .nav-next { right: auto; left: 18px; }
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
+    transform: scale(1.12);
+    transform-origin: center;
 }
 
 .fab-haat {
