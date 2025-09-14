@@ -427,8 +427,26 @@ body.high-contrast .usp-card { background-color: #ffffff; border-color: #000000;
 
 /* Logo styling */
 #logo {
-    height: 56px;
+    height: 44px;
     width: auto;
+    flex: 0 0 auto;
+    display: block;
+}
+
+/* Brand group in nav: horizontal layout */
+.main-nav .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Brand title next to the logo */
+.main-nav .brand-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    color: var(--primary-color);
+    white-space: nowrap;
 }
 
 /* Mobile hamburger */
