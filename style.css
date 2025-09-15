@@ -58,20 +58,24 @@ html { scroll-behavior: smooth; }
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    width: auto;
+    height: auto;
     min-width: 28px;
     min-height: 28px;
-    line-height: 28px;
+    max-width: 80px;
+    line-height: 1.2;
     font-size: 12px;
-    padding: 0;
+    padding: 4px 8px;
     border-radius: 50%;
     font-weight: 700;
     box-shadow: var(--shadow-sm);
     box-sizing: border-box;
-    overflow: hidden;
-    white-space: nowrap;
-    flex: 0 0 28px;
+    overflow: visible;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    text-wrap: balance;
+    flex: 0 0 auto;
 }
 
 /* Top green CTA button (fixed) */
