@@ -315,7 +315,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const applyTranslations = (lang) => {
     document.documentElement.lang = lang;
-    document.documentElement.dir = (lang === 'he' || lang === 'ar') ? 'rtl' : 'ltr';
+    // Keep document direction fixed to prevent reflow across languages
+    // document.documentElement.dir remains as set in the HTML (e.g., 'rtl')
     document.title = getText(lang, 'page.title');
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
