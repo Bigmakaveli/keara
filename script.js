@@ -314,8 +314,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const applyTranslations = (lang) => {
-    document.documentElement.lang = (lang === 'ar') ? 'ar' : 'he';
-    document.documentElement.dir = 'rtl';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = (lang === 'he' || lang === 'ar') ? 'rtl' : 'ltr';
     document.title = getText(lang, 'page.title');
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
