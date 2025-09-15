@@ -58,13 +58,20 @@ html { scroll-behavior: smooth; }
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 36px;
-    padding: 0 12px;
-    border-radius: 999px;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    padding: 0;
+    border-radius: 50%;
     font-weight: 700;
     box-shadow: var(--shadow-sm);
     box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 0 0 28px;
 }
 
 /* Top green CTA button (fixed) */
